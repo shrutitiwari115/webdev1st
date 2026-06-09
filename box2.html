@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            height:100vh;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
+            grid-template-areas: "RED RED BLACK BLUE"
+                                  "PINK GREEN GREEN RED"
+                                  "PINK PINK BLUE BLACK";
+        }
+        .RED{
+           grid-area: RED;
+           background-color: red;
+        }
+        .BLACK{
+            grid-area:BLACK;
+           background-color:black;
+        }
+        .BLUE{
+            grid-area:BLUE;
+            background-color: blue;
+        }
+        .PINK{
+            grid-area:PINK;
+            background-color: pink;
+        }
+        .GREEN{
+             grid-area: GREEN;
+             background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="RED">RED</div>
+    <div class="BLACK">BLACK</div>
+    <div class="BLUE">BLUE</div>
+    <div class="PINK">PINK</div>
+    <div class="GREEN">GREEN</div>
+    </div>
+</body>
+</html>
